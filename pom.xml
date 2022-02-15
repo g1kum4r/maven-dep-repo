@@ -47,10 +47,14 @@
         <repository>
             <id>maven-depo-repo</id>
             <name>maven-depo-repo</name>
-            <url>https://github.com/g1kum4r/maven-dep-repo/raw/releases</url>
+            <url>https://raw.github.com/g1kum4r/maven-dep-repo.git/releases</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+
         </repository>
     </repositories>
 
@@ -67,7 +71,7 @@
         <connection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</developerConnection>
         <url>https://github.com/g1kum4r/maven-dep-repo/raw/releases</url>
-        <tag>maven-dep-repo-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
