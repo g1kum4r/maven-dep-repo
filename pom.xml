@@ -47,7 +47,7 @@
         <repository>
             <id>maven-depo-repo</id>
             <name>maven-depo-repo</name>
-            <url>git:releases://${repo.url}</url>
+            <url>https://github.com/g1kum4r/maven-dep-repo/tree/releases</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
