@@ -65,7 +65,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</developerConnection>
-        <url>https://@github.com:g1kum4r/maven-dep-repo.git</url>
+        <url>https://github.com:g1kum4r/maven-dep-repo.git</url>
         <tag>maven-dep-repo-1.0</tag>
     </scm>
 
