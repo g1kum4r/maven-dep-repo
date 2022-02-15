@@ -9,8 +9,66 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+        <extensions>
+            <extension>
+                <groupId>ar.com.synergian</groupId>
+                <artifactId>wagon-git</artifactId>
+                <version>0.2.5</version>
+            </extension>
+        </extensions>
+    </build>
+
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>synergian-repo</id>
+            <url>https://raw.github.com/synergian/wagon-git/releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>maven-depo-repo</id>
+            <name>maven-depo-repo</name>
+            <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-depo-repo</id>
+            <name>maven-depo-repo</name>
+            <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+        </repository>
+    </distributionManagement>
+    <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</developerConnection>
+        <url>https://@github.com:g1kum4r/maven-dep-repo.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
