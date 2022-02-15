@@ -4,7 +4,7 @@
 
     <groupId>maven-dep-repo</groupId>
     <artifactId>maven-dep-repo</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -71,7 +71,7 @@
         <connection>scm:git:ssh://git@github.com/g1kum4r/maven-dep-repo.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/g1kum4r/maven-dep-repo.git</developerConnection>
         <url>https://github.com/g1kum4r/maven-dep-repo/raw/releases</url>
-        <tag>maven-dep-repo-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
