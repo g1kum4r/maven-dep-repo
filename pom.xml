@@ -9,6 +9,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <repo.url>git@github.com:g1kum4r/maven-dep-repo.git</repo.url>
     </properties>
 
 
@@ -46,7 +47,7 @@
         <repository>
             <id>maven-depo-repo</id>
             <name>maven-depo-repo</name>
-            <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+            <url>git:releases://${repo.url}</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -57,15 +58,15 @@
         <repository>
             <id>maven-depo-repo</id>
             <name>maven-depo-repo</name>
-            <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+            <url>git:releases://${repo.url}</url>
         </repository>
     </distributionManagement>
-    <url>git:releases://git@github.com:g1kum4r/maven-dep-repo.git</url>
+    <url>git:releases://${repo.url}</url>
 
     <scm>
         <connection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:g1kum4r/maven-dep-repo.git</developerConnection>
-        <url>https://github.com:g1kum4r/maven-dep-repo.git</url>
+<!--        <url>https://github.com:g1kum4r/maven-dep-repo.git</url>-->
         <tag>maven-dep-repo-1.0</tag>
     </scm>
 
